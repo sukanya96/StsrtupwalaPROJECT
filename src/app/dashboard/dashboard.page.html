@@ -1,0 +1,220 @@
+<ion-header>
+  <ion-toolbar style="--background:#753a88!important;">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Welcome</ion-title>
+    <ion-buttons slot="end">
+
+      <ion-button class="notification">
+        <ion-icon color="light" slot="end" name="search-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button class="notification">
+        <ion-icon color="light" slot="end" name="notifications-outline"></ion-icon>
+        <ion-badge color="danger">66</ion-badge>
+        <span>&nbsp;</span>
+      </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="bg-class">
+
+  <!-----Slides---->
+<ion-slides pager="true" [options]="slideOpts" #mySlider >
+
+    <ion-slide>
+      <ion-card >
+      <img src="../../assets/startimg.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+     <ion-card >
+     <img src="../../assets/partnership.jpg" > </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+     <ion-card >
+        <img src="../../assets/oneperson.jpg" >
+
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+     <ion-card >
+        <img src="../../assets/publiclimited.jpg" >
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+     <ion-card >
+
+        <img src="../../assets/gst.jpg">
+
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+     <ion-card >
+        <img src="../../assets/section-8.jpg" >
+      </ion-card>
+
+    </ion-slide>
+  </ion-slides>
+
+  <div class="card-background">
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col size="6">
+          <ion-card class="card1" routerLink="/business">
+            <ion-card-header>
+              <ion-card-subtitle style="color: #753a88;">Start Business</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content color="light">
+              <div class="text-align:center">
+                <circle-progress [percent]="50" [space]="-5" [radius]="50" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                  [innerStrokeColor]="'yellow'" [outerStrokeColor]="'#753a88'" [animation]="true"
+                  [animationDuration]="2300"></circle-progress>
+              </div>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+
+        <ion-col size="6">
+          <ion-card class="card2" routerLink="/manage-business">
+            <ion-card-header>
+              <ion-card-subtitle>Manage Business</ion-card-subtitle>
+
+            </ion-card-header>
+
+            <ion-card-content color="light">
+              <div class="text-align:center">
+                <circle-progress [percent]="50" [space]="-5" [radius]="50" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                  [innerStrokeColor]="'yellow'" [outerStrokeColor]="'red'" [animation]="true"
+                  [animationDuration]="2300"></circle-progress>
+              </div>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+
+        <ion-col size="6">
+          <ion-card class="card3" routerLink="/prtct-business">
+            <ion-card-header>
+              <ion-card-subtitle>Protect Business</ion-card-subtitle>
+
+            </ion-card-header>
+
+            <ion-card-content color="light">
+              <div class="text-align:center">
+                <circle-progress [percent]="50" [space]="-5" [radius]="50" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                  [innerStrokeColor]="'yellow'" [outerStrokeColor]="'blue'" [animation]="true"
+                  [animationDuration]="2300"></circle-progress>
+              </div>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card4" routerLink="/grow-business">
+            <ion-card-header>
+              <ion-card-subtitle>Grow Business</ion-card-subtitle>
+
+            </ion-card-header>
+
+            <ion-card-content color="light">
+              <div class="text-align:center">
+                <circle-progress [percent]="50" [space]="-5" [radius]="50" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                  [innerStrokeColor]="'yellow'" [outerStrokeColor]="'green'" [animation]="true"
+                  [animationDuration]="2300"></circle-progress>
+              </div>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card5" routerLink="/payment">
+            <ion-card-header>
+              <ion-card-subtitle>Make Payment</ion-card-subtitle>
+
+            </ion-card-header>
+
+            <ion-card-content color="light">
+              <div class="text-align:center">
+                <circle-progress [percent]="50" [space]="-5" [radius]="50" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                  [innerStrokeColor]="'yellow'" [outerStrokeColor]="'#800000'" [animation]="true"
+                  [animationDuration]="2300"></circle-progress>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card6" routerLink="/free-agree">
+            <ion-card-header>
+              <ion-card-subtitle>Free Agreements</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content color="light">
+              <div class="text-align:center">
+                <circle-progress [percent]="50" [space]="-5" [radius]="50" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                  [innerStrokeColor]="'yellow'" [outerStrokeColor]="'#191970'" [animation]="true"
+                  [animationDuration]="2300"></circle-progress>
+              </div>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>
+
+<ion-toolbar>
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom" color="purple" routerLink="/dashboard">
+    <ion-tab-button tab="tab1">
+      <ion-icon name="home-outline" color="light"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab2">
+      <ion-icon name="search" color="light"></ion-icon>
+    </ion-tab-button>
+
+    <!-- <ion-tab-button tab="tab3" class="custom-tab">
+      <ion-icon name="add" style="color: white;"></ion-icon>
+    </ion-tab-button> -->
+
+    <ion-tab-button tab="tab4">
+      <ion-icon name="chatbox-ellipses-outline" color="light"></ion-icon>
+      <ion-badge>9</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab5" class="custom-profile">
+      <ion-icon name="person-circle-outline"color="light"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+  </ion-tabs>
+  </ion-toolbar>
+
+
+
+  
+
+
+  

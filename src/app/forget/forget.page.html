@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar style="--background:#753a88!important;">
+    <ion-title color="light">Forgot Password</ion-title>
+
+    <ion-buttons slot="start" [routerLink]="['/login']">
+      <ion-button class="backbtn" routerDirection="backward">
+        <ion-icon name="arrow-back-outline" style="color: white;" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <img src="..//../assets/startup2.jpeg" style="margin-top: 30px;">
+  
+<ion-content class="ion-padding">
+
+  <form [formGroup]="formcontrol" >
+
+  <div class="ion-padding container">
+ 
+ 
+<div class="form">
+
+
+<ion-item transparent>
+<ion-icon name="mail" style="padding-right: 10px;"></ion-icon>
+<ion-input placeholder="Email" type="email" formControlName="email" ></ion-input>
+  
+</ion-item>
+
+<span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
+Email-ID required
+</span>
+
+<span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+Please enter Valid Email-ID
+</span>
+
+
+</div>
+
+
+
+<ion-button class="ion-button-class" expand="round" side="bottom"
+(click)="login()" style="--background:#753a88!important;
+--padding-top:25px;--padding-bottom:25px;font-weight: bold;margin:0 auto;
+    margin-top: 70px;">Reset Password</ion-button>
+
+ <ion-label style="font-size: 14px;color:#da0641;margin-top: 30px;" class="sign-up">
+  <b [routerLink]="['/login']">or Login</b>
+
+</ion-label>
+
+
+
+  </div>
+</form>
+
+</ion-content>

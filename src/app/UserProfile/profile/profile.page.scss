@@ -1,0 +1,13 @@
+.bg-class{
+    --background:linear-gradient(197deg,#2d75b8 0% ,13.5%, #753a88)!important;
+  }
+  *{
+    font-family: 'Oswald', sans-serif;
+  }
+  ion-toolbar{
+   --background:#753a88!important;
+  }
+
+  ion-avatar{
+    margin: 0 auto;
+  }

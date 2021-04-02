@@ -1,0 +1,34 @@
+<ion-content>
+<ion-toolbar>
+<div class="container">
+    <div class="scroll" scrollX="true">
+  
+  <ion-segment 
+  scrollable="true"
+  value="all"
+  
+  mode="Android"
+  [(ngModel)]="segmentModel" 
+  (ionChange)="segmentChanged($event)">
+
+    <ion-segment-button value="Overview" scrollX="true" (click)="ScrollToPoint(-300, -120)">
+      <ion-label style="color: white;font-weight: 600;">Overview</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="Benifits" scrollX="true">
+      <ion-label style="font-weight: bold; color: white;">Benifits </ion-label>
+    </ion-segment-button>
+
+   
+  </ion-segment>
+  </div></div>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div *ngIf="segmentModel === 'Overview'">
+  </div>
+
+  <div *ngIf="segmentModel === 'Benifits'">
+    </div>
+</ion-content>

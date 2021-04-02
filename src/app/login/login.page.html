@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="light">Sign In</ion-title>
+    <ion-buttons slot="start" [routerLink]="['/reg']">
+      <ion-button class="backbtn" routerDirection="backward">
+        <ion-icon name="arrow-back-outline" style="color: white;" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <img src="..//../assets/startup2.jpeg" >
+  
+<ion-content class="ion-padding">
+
+  <form [formGroup]="formcontrol" >
+
+  <div class="ion-padding container">
+ 
+<div class="form">
+
+<ion-item transparent>
+<ion-icon name="mail" style="padding-right: 10px;"></ion-icon>
+<ion-input placeholder="Email" type="email" formControlName="email" ></ion-input>
+</ion-item>
+
+<span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
+Email required<ion-icon class="alert" name="alert-circle-outline"></ion-icon>
+</span>
+
+<span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+Please enter Valid Email<ion-icon class="alert" name="alert-circle-outline"></ion-icon>
+</span>
+<br>
+
+<ion-item transparent>
+  <ion-icon name="lock-closed" style="padding-right: 10px;"></ion-icon>
+  <ion-input type="text" placeholder="Password" formControlName="password"></ion-input>
+</ion-item>
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.required">
+  password required<ion-icon class="alert" name="alert-circle-outline"></ion-icon>
+  </span>
+  
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.maxLength">
+    password cannot be more than 20 characters long.<ion-icon class="alert" name="alert-circle-outline"></ion-icon>
+  </span>
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.minLength">
+    password must be at least 6 characters long.<ion-icon class="alert" name="alert-circle-outline"></ion-icon>
+  </span>
+
+</div>
+
+    
+
+<ion-button class="ion-button-class" expand="round" side="bottom"
+(click)="login()" style="--background:#753a88!important;
+--padding-top:25px;--padding-bottom:25px;font-weight: bold;margin:0 auto;
+    margin-top: 70px;">Login</ion-button> 
+
+ <ion-label style="font-size: 14px;color:#da0641;margin-top: 30px;" class="sign-up">
+  <b>Don't have Account?</b>
+<span [routerLink]="['/reg']"
+style="font-size: 14px;font-weight: bold;color:#3a9177 ;">&nbsp;Register
+</span>
+</ion-label>
+
+<ion-label [routerLink]="['/forget']">
+ 
+<span class="sign-up"
+style="font-size: 14px;font-weight: bold;color:#0470dc;margin-top: 10px ;"> Or Forgot Password
+</span>
+</ion-label>
+
+  </div>
+</form>
+
+</ion-content>

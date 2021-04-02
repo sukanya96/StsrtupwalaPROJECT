@@ -24,3 +24,12 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+//@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Sarala&display=swap');
+.split-pane-visible >.split-pane-side {
+    --min-width: 150px!important;
+    --max-width: 150px!important;
+  }
+  
+  

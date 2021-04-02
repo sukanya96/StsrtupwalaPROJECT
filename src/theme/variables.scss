@@ -4,12 +4,12 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: #3a9177;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-shade: #3a9177;
+  --ion-color-primary-tint: #3a9177;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
@@ -234,3 +234,21 @@
     --ion-card-background: #1e1e1e;
   }
 }
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+  color: white;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 1px;
+  color: red;
+}
+:focus{
+outline: none;
+}
+

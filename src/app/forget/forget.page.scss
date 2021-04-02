@@ -1,0 +1,52 @@
+img{
+    width: 210px;;
+    height: 140px;
+    margin: 0 auto;
+  }
+  *{
+    font-family: 'Nunito', sans-serif;
+  }
+  h1{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: blue;
+  }
+  ion-icon{
+    color: #da0641;
+  }
+  b{
+    text-align: center;
+  }
+  ion-label{
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  .sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ion-button-class{
+    text-transform: inherit;
+    
+  }
+  .ion-button-class{
+    margin: 0 auto;
+    margin-top: 70px;
+  --padding-start: 57px;
+  --padding-end: 57px;
+  padding-left: 12px;
+}
+  
+  .form {
+    padding-top: 20px;
+    
+    ion-input{
+          padding: 0 0 0 10px;
+          font-size: 16px;
+         
+        }
+    
+  }
+    
